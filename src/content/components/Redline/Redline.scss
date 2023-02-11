@@ -1,0 +1,17 @@
+// $orange:#282828;
+$orange:hsl(27 , 87% , 34%);
+
+.Redline{
+    position: sticky;
+    background-color: $orange;
+    width: 100vw;
+    height: 1vh;
+}
+
+//for Redlines with relative positions
+.NFRedline{
+    // position: fixed;
+    background-color: $orange;
+    width: 100vw;
+    height: 1vh;
+}

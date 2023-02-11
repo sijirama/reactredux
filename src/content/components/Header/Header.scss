@@ -1,0 +1,27 @@
+@import "../../../style/colours.scss";
+
+.header{
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;
+    background-color: $headerbackground-colour;
+
+    padding-left: 3rem;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.logo{
+    display: flex;
+    text-align: center;
+    color: $secondary-colour;
+}
+.logo h1{
+    // color: $secondary-colour;
+    color: $orange;
+    font-weight: 400;
+    font-family:  Helvetica, sans-serif;    
+}

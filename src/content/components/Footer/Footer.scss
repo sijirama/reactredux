@@ -1,0 +1,13 @@
+@import "../../../style/colours.scss";
+
+
+.footer{
+    background-color: $headerbackground-colour;
+    height: 5vh;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    // bottom: 0vh;
+}

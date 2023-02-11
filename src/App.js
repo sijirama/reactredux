@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import React from 'react';
+import {BrowserRouter as Router , Route , Routes } from "react-router-dom"
+import Home from "./content/pages/Home/Home"
+import Header from "./content/components/Header/Header"
+import Footer from "./content/components/Footer/Footer"
+import MovieDetail from './content/pages/MovieDetail/MovieDetail'
+import PageNotFound from "./content/pages/PageNotFound/PageNotFound"
+import Redline from './content/components/Redline/Redline';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App">       
+      <Router>
+        <Header />
+        <Redline name={"Redline"}/>
+          <Routes>
+            <Route path='/' element={<Home/>} />
+            <Route path='/movie/:imdbID' element={<MovieDetail />} />
+            <Route path='*' element={<PageNotFound />} />
+          </Routes>
+        <Footer />
+      </Router>
     </div>
   );
 }
