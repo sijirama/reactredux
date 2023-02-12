@@ -1,1 +1,4 @@
-### Simple Redux Implementation in React
+### Simple Redux Implementation in a React application.
+
+Incomplete
+> Movie Listing Iteration 
